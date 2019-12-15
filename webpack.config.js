@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 const outputPath = path.resolve(__dirname, 'dist');
 console.debug(outputPath);
