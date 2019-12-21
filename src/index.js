@@ -1,7 +1,7 @@
-import _ from 'lodash'
-import style from './style.css'
+import _ from 'lodash';
+import './style.css';
+import logo from './images/logo.png';
 
-console.debug({style, string: style.toString()});
 
 function component() {
   const element = document.createElement('div');
@@ -12,3 +12,7 @@ function component() {
 
 document.body.appendChild(component());
 document.body.classList.add('main');
+
+const image = new Image();
+image.src = logo;
+document.body.appendChild(image);
