@@ -1,15 +1,14 @@
 import _ from 'lodash'
-import Lion, * as utilities from "./utilities";
+import style from './style.css'
 
-console.log(utilities.square(9));
-console.log(utilities.NAME);
-console.log(Lion.say());
+console.debug({style, string: style.toString()});
 
 function component() {
-    const element = document.createElement('div');
-    const array = ['Hello', 'webpack', '!!!'];
-    element.innerHTML = _.join(array, '! ');
-    return element;
+  const element = document.createElement('div');
+  const array = ['Hello', 'webpack', '!!!'];
+  element.innerHTML = _.join(array, '! ');
+  return element;
 }
 
 document.body.appendChild(component());
+document.body.classList.add('main');
